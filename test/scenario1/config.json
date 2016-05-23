@@ -1,0 +1,12 @@
+{
+  "domain": "https://localhost",
+  "endpoint": "/service",
+  "method": "GET",
+  "suites":[
+      {
+        "tests": [
+          "valid/test001.json"
+        ]
+      }
+  ]
+}
