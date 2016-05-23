@@ -1,0 +1,28 @@
+{
+  "name": "catnap",
+  "version": "0.0.1",
+  "description": "REST API Testing Framework ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"completed\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ariesb/catnap"
+  },
+  "keywords": [
+    "REST",
+    "check",
+    "testing",
+    "declarative",
+    "framework"
+  ],
+  "author": "Aries Beltran <ariesbe@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "jsonfile": "^2.3.0",
+    "request": "^2.72.0",
+    "yargs": "^4.7.0"
+  }
+}
