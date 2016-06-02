@@ -1,0 +1,6 @@
+{
+  "protocol": "https",
+  "domain": "www.restdomain.com",
+  "path": "/auth/@{username}/sessions?encryptedPassword=@{password}",
+  "method": "POST"
+}

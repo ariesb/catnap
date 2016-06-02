@@ -1,5 +1,11 @@
-'use strict';
+' use strict';
 
+var util = require('./lib/util');
+var api = require('./lib/api');
+
+var apidef = api.get('test/scenario1');
+util.log(api.make(apidef));
+/*
 var fs = require('fs');
 var path = require('path');
 var chalk = require('chalk');
@@ -7,18 +13,9 @@ var jsonfile = require('jsonfile');
 var argv = require('yargs').argv;
 var request = require('request');
 
-var config = {};
-if (argv.source) {
-  try {
-    config = jsonfile.readFileSync(argv.source);
-  } catch (e) {
-    console.log(chalk.red('Please provide valid test source definition.'));
-  }
-} else {
-  console.log(chalk.red('Please provide test source definition.'));
-}
 
-console.log(config);
+
+
 
 var reqdef = {
   method: config.method,
@@ -47,3 +44,4 @@ request(reqdef,
       //console.log('received ' + data.length + ' bytes of compressed data')
     })
   });
+*/

@@ -1,0 +1,50 @@
+{
+  "case:0001": {
+    "description": "Validate user session based on authentication parameters - Valid User",
+    "tags": ["basic", "valid"],
+    "meta": {
+      "username": "testmakqa02",
+      "password": "12345678"
+    },
+    "headers": {
+      "lang": "en",
+      "portalId": 1
+    },
+    "test":{
+      "expects": {
+        "statusCode": 200,
+        "responseType": "json"
+      },
+      "hasValue": {
+        "playerId": "123456789"
+      },
+      "hasRepeatable": {
+        "0": "arrayAttributeData"
+      }
+    }
+  },
+  "case:0002": {
+    "description": "Validate user session based on authentication parameters - Invalid User",
+    "tags": ["basic", "invalid"],
+    "meta": {
+      "username": "testmakqa02",
+      "password": "12345679"
+    },
+    "headers": {
+      "lang": "en",
+      "portalId": 1
+    },
+    "test":{
+      "expects": {
+        "statusCode": 200,
+        "responseType": "json"
+      },
+      "hasValue": {
+        "playerId": "123456789"
+      },
+      "hasRepeatable": {
+        "0": "arrayAttributeData"
+      }
+    }
+  }
+}
